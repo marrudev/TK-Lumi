@@ -1,0 +1,52 @@
+@use '../abstracts/' as *;
+
+.grid-even-col {
+  --grid-min-width: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(var(--grid-min-width), 100%), 1fr));
+  row-gap: 2rem;
+  column-gap: 1rem;
+
+  &.col-2 {
+    --grid-min-width: 550px;
+    row-gap: 4rem;
+    column-gap: 4rem;
+  }
+
+  &.col-3 {
+    --grid-min-width: 420px;
+  }
+
+  &.col-4 {
+    --grid-min-width: 320px;
+  }
+}
+
+.grid-features {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: clamp(1.5rem, 0.7857rem + 2.2857vw, 2.5rem);
+
+  @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-contact {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+
+  /* @media screen and (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr;
+  } */
+}
