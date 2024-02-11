@@ -11,7 +11,48 @@
   }
 }
 
+// Hero
+
+.hero-content {
+  padding-top: 15rem;
+  padding-bottom: 20rem;
+}
+
+.hero-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  /* img {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+  } */
+}
+
 // Features
+
+.section-bg-features {
+  position: relative;
+  z-index: 100;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 100px);
+    bottom: 0;
+    right: 0;
+    background-color: $gray-light;
+  }
+}
+
 .feature__card {
   display: flex;
   flex-direction: column;
@@ -37,6 +78,7 @@
   font-size: clamp(1rem, 0.4rem + 2.1333vw, 2rem);
   font-family: $ff-accent;
   font-weight: 500;
+  text-align: center;
 }
 
 // Info section
@@ -46,6 +88,12 @@
 
   .h2-wrapper {
     margin-bottom: 0;
+  }
+
+  &.spoluprace {
+    padding: $padding-section 0;
+    padding-right: clamp(1rem, 0.7653rem + 0.8163vw, 1.5rem);
+    justify-content: center;
   }
 }
 
@@ -77,6 +125,59 @@
 
   .client__logo {
     height: 3.5rem;
+  }
+}
+
+.top-shadow-white {
+  z-index: 1 !important;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+  }
+}
+
+// Spolupráce
+
+.section-left-bg-yellow {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200vw;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: $accent;
+    border-top-right-radius: $border-radius-lg;
+    border-bottom-right-radius: $border-radius-lg;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .section-left-bg-yellow::before {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    right: -20vw;
+  }
+
+  .section-spoluprace {
+    padding-top: 0 !important;
+  }
+}
+
+.spoluprace__card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+
+  & .feature__icon {
+    width: 2.5rem;
   }
 }
 

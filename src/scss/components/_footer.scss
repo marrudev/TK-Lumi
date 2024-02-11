@@ -4,43 +4,42 @@
 
 footer,
 .footer {
-  background-color: $accent;
-  color: $white;
-  padding: 5rem 0;
+  padding: 4rem 0;
+  font-size: $fs-small;
 
-  a {
-    color: $white;
-  }
-
-  .divider-line {
-    height: 1px;
-    width: 100%;
-    background-color: #ffffff50;
-  }
-
-  .nav-footer {
+  .footer-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
 
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 2.5rem;
-      row-gap: 1rem;
-      list-style: none;
-      padding: 0;
-      margin: 0;
+    & > * {
+      flex-grow: 1;
     }
   }
 
   .footer-logo {
-    margin-inline: auto;
-    height: 80px;
-    transform: translateY(-50%);
+    height: 5rem;
+  }
+
+  .socials {
+    height: 2.5rem;
+    width: 2.5rem;
+    transition: $transition;
+
+    &:hover {
+      scale: 1.15;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .footer-col-1 {
+      width: 100%;
+    }
+
+    .footer-logo {
+      height: 4rem;
+    }
   }
 }
 

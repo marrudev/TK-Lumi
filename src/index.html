@@ -15,16 +15,26 @@
     <!---- Section ---->
     <main>
       <section>
-        <div class="container"><button>Hello</button></div>
+        <div class="container">
+          <div class="grid-even-col hero">
+            <div class="hero-content flex flex-col fj-center gap-10">
+              <h1>Dáme tomu volty.</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas lorem. Pellentesque sapien. Mauris
+                dolor felis, sagittis at
+              </p>
+              <div class="flex fa-center flex-wrap gap-4">
+                <a class="button" href="#kontakt"><img src="./images/icons/blesk_zluty.svg" alt="" />Kontaktujte nás</a>
+                <p><strong>Nebo volejte +420 603 874 061</strong></p>
+              </div>
+            </div>
+            <div class="hero-img-wrapper"><img src="./images/content/foto_header_v_blesku.png" alt="" /></div>
+          </div>
+        </div>
       </section>
-      <section>
-        <div class="container"><button>Hello</button></div>
-      </section>
-      <section>
-        <div class="container"><button>Hello</button></div>
-      </section>
+
       <!---- Features ---->
-      <section class="padding-bottom bg--gray-light">
+      <section class="padding-bottom section-bg-features" id="sluzby">
         <div class="container">
           <div class="grid-features">
             <div class="feature__card">
@@ -60,8 +70,69 @@
           </div>
         </div>
       </section>
+      <!---- Spolupráce ---->
+      <section class="padding-both section-spoluprace">
+        <div class="container">
+          <div class="grid-even-col col-2 spoluprace">
+            <div class="content-col spoluprace flex flex-col fa-start relative section-left-bg-yellow">
+              <div class="h2-wrapper flex flex-col gap-4">
+                <div class="flex flex-row gap-2">
+                  <img src="./images/icons/blesk_cerny.svg" alt="" />
+                  <img src="./images/icons/blesk_cerny.svg" alt="" />
+                  <img src="./images/icons/blesk_cerny.svg" alt="" />
+                </div>
+                <h2>Co přinese spolupráce s námi?</h2>
+              </div>
+              <p>
+                Zde vypíchnout proč nás? Hlavně termíny a komunikaci, že není prolbém zavolat kdykoliv, prostě 24/7. Ta
+                zodpovědnost a svědomitost.
+              </p>
+              <p><strong>Chcete s námi spolupracovat či se podílet na projektech? Napište nám.</strong></p>
+              <a class="button" href="#kontakt"><img src="./images/icons/blesk_zluty.svg" alt="" />Kontaktujte nás</a>
+            </div>
+            <div class="grid-even-col col-4">
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_terminy.svg" alt="" />
+                <p class="h4">Dodržujeme termíny</p>
+                <p>
+                  Přeformulovat text, tři řádky max. Termín je svatá věc pro dodržení termínu jsem ochoten udělat
+                  spoustu věcí.
+                </p>
+              </div>
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_dostupnost.svg" alt="" />
+                <p class="h4">Dostupnost 24/7</p>
+                <p>Není problém se v případě potřeby ozvat, kdykoliv.</p>
+              </div>
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_zodpovednost.svg" alt="" />
+                <p class="h4">Zodpovědnost</p>
+                <p>Pokud narazíme na chybu či nevyhovující stav původní elektřiny, hledáme řešení.</p>
+              </div>
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_kreativita.svg" alt="" />
+                <p class="h4">Kreativita</p>
+                <p>Designové návrhy vnitřního osvětlení.</p>
+              </div>
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_realizace_evropa.svg" alt="" />
+                <p class="h4">Realizace po celé Evropě</p>
+                <p>Čerpáme ze zkušeností z montáží po celé Evropě.</p>
+              </div>
+              <div class="spoluprace__card">
+                <img class="feature__icon" src="./images/icons/ikona_dodrzovani_bozp.svg" alt="" />
+                <p class="h4">Dodržování BOZP</p>
+                <p>
+                  Dodržujeme standard BOZP, vždy proškolení technici pro práci vy výškách a proškolení pro práci s
+                  plošinami a VZV.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <!---- O nas ---->
-      <section class="padding-both">
+      <section class="padding-bottom" id="o-nas">
         <div class="container">
           <div class="grid-even-col col-2">
             <div class="content-col flex flex-col">
@@ -98,7 +169,7 @@
         </div>
       </section>
       <!---- Klienti ---->
-      <section class="padding-bottom bg--gray-light">
+      <section class="padding-bottom bg--gray-light relative top-shadow-white" id="reference">
         <div class="container">
           <div class="h2-wrapper flex flex-col gap-4">
             <div class="flex flex-row gap-2">
@@ -155,10 +226,10 @@
         </div>
       </section>
       <!---- Contact ---->
-      <section class="padding-both">
+      <section class="padding-both" id="kontakt">
         <div class="container">
           <div class="grid-contact">
-            <div class="content-col flex flex-col">
+            <div class="content-col flex flex-col fa-start">
               <div class="h2-wrapper flex flex-col gap-4">
                 <div class="flex flex-row gap-2">
                   <img src="./images/icons/blesk_zluty.svg" alt="" />
@@ -176,12 +247,20 @@
                 <a class="h4" href="">info@tklumi.cz</a>
               </div>
             </div>
-            <form action="">
-              <label for="">Hello</label>
-              <label for="">Hello</label>
-              <label for="">Hello</label>
-              <label for="">Hello</label>
-            </form>
+            <div class="form-wrapper">
+              <form action="">
+                <div class="form-inputs-row flex gap-4 w-full">
+                  <input type="text" placeholder="Jméno a příjmení" />
+                  <input type="text" placeholder="E-mail" />
+                  <input type="text" placeholder="Telefonní číslo"" />
+                </div>
+                <textarea class="textarea" name="" id="" placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
+                <div class="flex flex-row fa-center fj-end w-full flex-wrap gap-4">
+                  <p class="fs-tiny">Odesláním souhlasím se <a href="">zpracováním osobních údajů</a></p>
+                  <button class="button"><img src="./images/icons/blesk_zluty.svg" alt="" />Odeslat zprávu</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>

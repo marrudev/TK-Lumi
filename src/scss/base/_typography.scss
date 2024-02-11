@@ -31,8 +31,9 @@ h4,
 h1,
 .h1 {
   font-family: $ff-accent;
-  font-size: clamp(5.125rem, 2.5357rem + 8.2857vw, 8.75rem);
+  font-size: clamp(5rem, 3.5rem + 5.3333vw, 7.5rem);
   font-weight: 700;
+  line-height: 0.9;
 }
 
 h2,
@@ -60,17 +61,24 @@ h4,
   font-size: $fs-small;
 }
 
-a {
-  color: $accent;
-  text-decoration: none;
+.fs-tiny {
+  font-size: 0.75rem;
 }
 
-a:is(:hover, :focus) {
+a {
+  color: $primary;
   text-decoration: underline;
   text-decoration-thickness: max(0.08em, 1px);
   text-underline-offset: 0.15em;
   cursor: pointer;
 }
+
+/* a:is(:hover, :focus) {
+  text-decoration: underline;
+  text-decoration-thickness: max(0.08em, 1px);
+  text-underline-offset: 0.15em;
+  cursor: pointer;
+} */
 
 // Font weights
 

@@ -4,7 +4,34 @@
 
 .form,
 form {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  input:not(.button),
+  textarea {
+    width: 100%;
+    flex-grow: 1;
+    font-size: $fs-small;
+    color: $primary;
+    background-color: $gray-light;
+    padding: 1.25rem 2rem;
+    border: none;
+    border-radius: $border-radius-lg;
+    border: 1px solid transparent;
+    outline: none;
+
+    &:focus {
+      border: 1px solid $primary;
+    }
+  }
+
+  .textarea {
+    min-height: 15rem;
+    border-radius: $border-radius-lg;
+    padding: 2rem;
+    resize: none;
+  }
 }
 
 label {
@@ -12,17 +39,16 @@ label {
   font-size: $fs-small;
 }
 
-input:not(.button) {
-  font-size: $fs-regular;
+::placeholder {
   color: $primary;
-  background-color: $white;
-  padding: 1rem 1.5rem;
-  border: solid 1px $black;
-  border-radius: $border-radius-sm;
 }
 
-::placeholder {
-  color: $text-body;
+.form-inputs-row {
+  flex-direction: row;
+
+  @media screen and (max-width: 578px) {
+    flex-direction: column;
+  }
 }
 
 /* purgecss end ignore */
