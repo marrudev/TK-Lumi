@@ -248,19 +248,86 @@
               </div>
             </div>
             <div class="form-wrapper">
-              <form action="">
+              <!-- <form
+                name="contact-form"
+                method="post"
+                action="https://gmail.us21.list-manage.com/subscribe/post?u=6aca371083ebc0a9ee7f7a158&amp;id=2865b59bc6&amp;f_id=0094f3e6f0">
+                
                 <div class="form-inputs-row flex gap-4 w-full">
-                  <input type="text" placeholder="Jméno a příjmení" />
-                  <input type="text" placeholder="E-mail" />
-                  <input type="text" placeholder="Telefonní číslo"" />
+                  <input type="text" name="NAME" placeholder="Jméno a příjmení" />
+                  <input type="email" name="EMAIL" placeholder="E-mail" />
+                  <input type="text" name="PHONE" placeholder="Telefonní číslo"" />
                 </div>
-                <textarea class="textarea" name="" id="" placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
+                <textarea class="textarea" name="MSG" id="" placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
                 <div class="flex flex-row fa-center fj-end w-full flex-wrap gap-4">
                   <p class="fs-tiny">Odesláním souhlasím se <a href="">zpracováním osobních údajů</a></p>
                   <button class="button"><img src="./images/icons/blesk_zluty.svg" alt="" />Odeslat zprávu</button>
                 </div>
+              </form> -->
+              <form
+                action="https://gmail.us21.list-manage.com/subscribe/post?u=6aca371083ebc0a9ee7f7a158&amp;id=2865b59bc6&amp;f_id=0094f3e6f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank">
+                <div class="form-inputs-row flex gap-4 w-full">
+                  <input type="text" name="NAME" id="mce-NAME" value="" placeholder="Jméno a příjmení" />
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                    required=""
+                    value=""
+                    placeholder="E-mail" />
+                  <input
+                    type="text"
+                    name="PHONE"
+                    class="REQ_CSS"
+                    id="mce-PHONE"
+                    value=""
+                    placeholder="Telefonní číslo" />
+                </div>
+                <textarea
+                  class="textarea"
+                  name="MSG"
+                  id="mce-MSG"
+                  value=""
+                  placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
+                <div class="flex flex-row fa-center fj-end w-full flex-wrap gap-4">
+                  <p class="fs-tiny">Odesláním souhlasím se <a href="">zpracováním osobních údajů</a></p>
+                  <button class="button" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
+                    <img src="./images/icons/blesk_zluty.svg" alt="" />Odeslat zprávu
+                  </button>
+                </div>
+                <!-- <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none">
+                  </div>
+                  <div class="response" id="mce-success-response" style="display: none"></div>
+                </div> -->
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                  /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                  signups */
+                  <input type="text" name="b_6aca371083ebc0a9ee7f7a158_2865b59bc6" tabindex="-1" value="" />
+                </div>
               </form>
             </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script type="text/javascript">
+              (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'NAME';
+                ftypes[1] = 'text';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[2] = 'MSG';
+                ftypes[2] = 'text';
+              })(jQuery);
+              var $mcj = jQuery.noConflict(true);
+            </script>
           </div>
         </div>
       </section>

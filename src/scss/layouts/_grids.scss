@@ -11,6 +11,14 @@
     grid-template-columns: 480px 1fr;
     row-gap: 2.5rem;
     column-gap: 4rem;
+
+    @media screen and (max-width: 1050px) {
+      grid-template-columns: 440px 1fr;
+    }
+
+    @media screen and (max-width: 850px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &.col-2 {
