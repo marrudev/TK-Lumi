@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- <title>Website title</title>
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
-    <meta property="og:title" itemprop="name" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:description" itemprop="description" content="XXXXX" />
-    <meta property="og:image" content="URL_to_img" /> -->
+    <title>TK LUMI - Dáme tomu volty - elektroinstalace</title>
+    <meta
+      name="description"
+      content="Spolehlivý dodavatel elektroinstalací, my tomu dáme volty! Zabýváme se silnoproudem, měřením a regulacemi, datovými rozvody, revizemi a projektovou dokumentací. Dodržujeme termíny, pojďte do toho s námi." />
+    <meta
+      name="keywords"
+      content="Tklumi, TK lumi, Silnoproudá elektroinstalace, elektroinstalace brno, měření a regulace, datové rozvody, revize a projektová dokumentace, kamerové systémy, chytrá domácnost fibaro, fotovoltaika, osvětlení, výměna kotlů, montáž požární ochrany, led osvětlení kuchyňských linek" />
+    <meta property="og:title" itemprop="name" content="TK LUMI - Dáme tomu volty - elektroinstalace" />
+    <meta property="og:url" content="www.tklumi.cz" />
+    <meta
+      property="og:description"
+      itemprop="description"
+      content="Spolehlivý dodavatel elektroinstalací, my tomu dáme volty! Zabýváme se silnoproudem, měřením a regulacemi, datovými rozvody, revizemi a projektovou dokumentací. Dodržujeme termíny, pojďte do toho s námi." />
+    <meta property="og:image" content="./images/tklumi_og_image.jpg" />
     @@include('./components/head.html') @@include('./components/analytics.html') @@include('./components/fav.html')
   </head>
   <body>
@@ -17,7 +24,7 @@
       <section>
         <div class="container">
           <div class="grid-even-col hero">
-            <div class="hero-content flex flex-col fj-center gap-10">
+            <div class="hero-content flex flex-col fj-center gap-10 load load-delayed-100">
               <h1>Dáme tomu volty.</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas lorem. Pellentesque sapien. Mauris
@@ -28,7 +35,9 @@
                 <p><strong>Nebo volejte +420 603 874 061</strong></p>
               </div>
             </div>
-            <div class="hero-img-wrapper"><img src="./images/content/foto_header_v_blesku.png" alt="" /></div>
+            <div class="hero-img-wrapper">
+              <img class="load" src="./images/content/foto_header_v_blesku.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -37,22 +46,22 @@
       <section class="padding-bottom section-bg-features" id="sluzby">
         <div class="container">
           <div class="grid-features">
-            <div class="feature__card">
+            <div class="feature__card load load-delayed-400">
               <img class="feature__icon" src="./images/icons/ikona_proud.svg" alt="" />
               <p class="h4">Silnoproudá elektroinstalace</p>
               <p>Zajišťujeme elektroinstalaci pro rodinné domy, komerční objekty, haly a kancelářské objekty.</p>
             </div>
-            <div class="feature__card">
+            <div class="feature__card load load-delayed-400">
               <img class="feature__icon" src="./images/icons/ikona_mereni.svg" alt="" />
               <p class="h4">Měření a regulace</p>
               <p>Zkratka MaR. Texty je tady potřeba dodělat na tři řádky v podobném znění.</p>
             </div>
-            <div class="feature__card">
+            <div class="feature__card load load-delayed-400">
               <img class="feature__icon" src="./images/icons/ikona_rozvody.svg" alt="" />
               <p class="h4">Datové rozvody</p>
               <p>Zajišťujeme elektroinstalaci pro rodinné domy, komerční objekty, haly a kancelářské objekty.</p>
             </div>
-            <div class="feature__card">
+            <div class="feature__card load load-delayed-400">
               <img class="feature__icon" src="./images/icons/ikona_revize.svg" alt="" />
               <p class="h4">Revize a projektová dokumentace</p>
               <p>Zajišťujeme elektroinstalaci pro rodinné domy, komerční objekty, haly a kancelářské objekty.</p>
@@ -91,7 +100,7 @@
               <a class="button" href="#kontakt"><img src="./images/icons/blesk_zluty.svg" alt="" />Kontaktujte nás</a>
             </div>
             <div class="grid-even-col col-4">
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_terminy.svg" alt="" />
                 <p class="h4">Dodržujeme termíny</p>
                 <p>
@@ -99,27 +108,27 @@
                   spoustu věcí.
                 </p>
               </div>
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_dostupnost.svg" alt="" />
                 <p class="h4">Dostupnost 24/7</p>
                 <p>Není problém se v případě potřeby ozvat, kdykoliv.</p>
               </div>
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_zodpovednost.svg" alt="" />
                 <p class="h4">Zodpovědnost</p>
                 <p>Pokud narazíme na chybu či nevyhovující stav původní elektřiny, hledáme řešení.</p>
               </div>
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_kreativita.svg" alt="" />
                 <p class="h4">Kreativita</p>
                 <p>Designové návrhy vnitřního osvětlení.</p>
               </div>
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_realizace_evropa.svg" alt="" />
                 <p class="h4">Realizace po celé Evropě</p>
                 <p>Čerpáme ze zkušeností z montáží po celé Evropě.</p>
               </div>
-              <div class="spoluprace__card">
+              <div class="spoluprace__card reveal">
                 <img class="feature__icon" src="./images/icons/ikona_dodrzovani_bozp.svg" alt="" />
                 <p class="h4">Dodržování BOZP</p>
                 <p>
@@ -160,7 +169,7 @@
               </div>
             </div>
             <div class="flex fa-center fj-center">
-              <div class="img-col relative">
+              <div class="img-col relative reveal">
                 <img class="img--rounded" src="./images/content/foto_o_nas.jpg" alt="" />
                 <img class="absolute decorative-blesk" src="./images/icons/blesk_zluty.svg" alt="" />
               </div>
@@ -180,35 +189,35 @@
             <h2>Komu dáváme volty?</h2>
           </div>
           <div class="grid-even-col col-3">
-            <div class="client__card flex flex-col fa-center gap-6">
+            <div class="client__card reveal flex flex-col fa-center gap-6">
               <img class="img-client img--rounded" src="./images/content/foto_kaufland.jpg" alt="" />
               <div class="flex flex-col gap-2 text-center">
                 <p class="h4">Obchodní domy Kaufland</p>
                 <p class="fs-small">Výměny AP (wifi)</p>
               </div>
             </div>
-            <div class="client__card flex flex-col fa-center gap-6">
+            <div class="client__card reveal flex flex-col fa-center gap-6">
               <img class="img-client img--rounded" src="./images/content/foto_tpca.jpg" alt="" />
               <div class="flex flex-col gap-2 text-center">
                 <p class="h4">Toyota Peugeot Citroen Automobile</p>
                 <p class="fs-small">Měření a regulace nových hal</p>
               </div>
             </div>
-            <div class="client__card flex flex-col fa-center gap-6">
+            <div class="client__card reveal flex flex-col fa-center gap-6">
               <img class="img-client img--rounded" src="./images/content/foto_kaufland.jpg" alt="" />
               <div class="flex flex-col gap-2 text-center">
                 <p class="h4">Obchodní domy Kaufland</p>
                 <p class="fs-small">Výměny AP (wifi)</p>
               </div>
             </div>
-            <div class="client__card flex flex-col fa-center gap-6">
+            <div class="client__card reveal flex flex-col fa-center gap-6">
               <img class="img-client img--rounded" src="./images/content/foto_kaufland.jpg" alt="" />
               <div class="flex flex-col gap-2 text-center">
                 <p class="h4">Obchodní domy Kaufland</p>
                 <p class="fs-small">Výměny AP (wifi)</p>
               </div>
             </div>
-            <div class="client__card flex flex-col fa-center gap-6">
+            <div class="client__card reveal flex flex-col fa-center gap-6">
               <img class="img-client img--rounded" src="./images/content/foto_kaufland.jpg" alt="" />
               <div class="flex flex-col gap-2 text-center">
                 <p class="h4">Obchodní domy Kaufland</p>
@@ -217,11 +226,11 @@
             </div>
           </div>
           <div class="client__logos-wrapper flex flex-row flex-wrap fj-center gap-4">
-            <img class="client__logo" src="./images/clients/logo_kaufland.png" alt="" />
-            <img class="client__logo" src="./images/clients/logo_tpca.png" alt="" />
-            <img class="client__logo" src="./images/clients/logo_kaufland.png" alt="" />
-            <img class="client__logo" src="./images/clients/logo_tpca.png" alt="" />
-            <img class="client__logo" src="./images/clients/logo_kaufland.png" alt="" />
+            <img class="client__logo reveal" src="./images/clients/logo_kaufland.png" alt="" />
+            <img class="client__logo reveal" src="./images/clients/logo_tpca.png" alt="" />
+            <img class="client__logo reveal" src="./images/clients/logo_kaufland.png" alt="" />
+            <img class="client__logo reveal" src="./images/clients/logo_tpca.png" alt="" />
+            <img class="client__logo reveal" src="./images/clients/logo_kaufland.png" alt="" />
           </div>
         </div>
       </section>

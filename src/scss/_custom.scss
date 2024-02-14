@@ -187,4 +187,36 @@
   }
 }
 
+// Reveal
+
+.reveal,
+.load {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active,
+.animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.load-delayed-100 {
+  transition-delay: 100ms;
+}
+
+.load-delayed-200 {
+  transition-delay: 200ms;
+}
+
+.load-delayed-400 {
+  transition-delay: 400ms;
+}
+
+.load-delayed-600 {
+  transition-delay: 600ms;
+}
+
 /* purgecss end ignore */

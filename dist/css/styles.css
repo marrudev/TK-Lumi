@@ -1027,3 +1027,40 @@ section.padding-bottom {
 .spoluprace__card .feature__icon {
   width: 2.5rem;
 }
+
+.reveal,
+.load {
+  position: relative;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  opacity: 0;
+  -webkit-transition: 1s all ease;
+  transition: 1s all ease;
+}
+
+.reveal.active,
+.animate {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
+.load-delayed-100 {
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
+}
+
+.load-delayed-200 {
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+
+.load-delayed-400 {
+  -webkit-transition-delay: 400ms;
+          transition-delay: 400ms;
+}
+
+.load-delayed-600 {
+  -webkit-transition-delay: 600ms;
+          transition-delay: 600ms;
+}
