@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TK LUMI - Kariéra</title>
+
+    @@include('./components/head.html') @@include('./components/analytics.html') @@include('./components/fav.html')
+  </head>
+  <body>
+    @@include('./components/header.html')
+    <!---- Section ---->
+    <main>
+      <!---- Kariera ---->
+      <section class="padding-both header-section" id="kariera">
+        <div class="container">
+          <div class="grid-even-col col-2">
+            <div class="content-col flex flex-col">
+              <div class="h2-wrapper flex flex-col gap-4">
+                <div class="flex flex-row gap-2">
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                </div>
+                <h2>Kariéra u nás</h2>
+              </div>
+              <p>Máte zájem o spolupráci s námi? Hledáte pracovní příležitost?</p>
+              <p>
+                Neváhejte se nám ozvat. Hledáme spolupracovníky v našem oboru. Možnost práce na živnostenský list či
+                HPP.
+              </p>
+              <div class="flex flex-col gap-2">
+                <p><strong>Základní požadavky:</strong></p>
+                <ul>
+                  <li>vzdělání a praxe v oboru elektro</li>
+                  <li>technické myšlení</li>
+                  <li>orientace v technické dokumentaci</li>
+                  <li>schopnost samostatné práce</li>
+                  <li>řidičský průkaz sk. B</li>
+                  <li>spolehlivost, pečlivost</li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex fa-center fj-center">
+              <div class="img-col relative">
+                <img class="img--rounded" src="./images/content/foto_o_nas.jpg" alt="" />
+                <img class="absolute decorative-blesk" src="./images/icons/blesk_zluty.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---- Contact ---->
+      <section class="padding-both" id="kontakt">
+        <div class="container">
+          <div class="grid-contact">
+            <div class="content-col flex flex-col fa-start">
+              <div class="h2-wrapper flex flex-col gap-4">
+                <div class="flex flex-row gap-2">
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                  <img src="./images/icons/blesk_zluty.svg" alt="" />
+                </div>
+                <h2>Dáme tomu volty!</h2>
+              </div>
+              <p>
+                Máte zájem o projekt s námi? My s Vámi určitě ano. Vyplňte formulář, ve kterém se nás neváhejte na
+                cokoliv zeptat. Vaše uspokojení z naší dobře vykonané práce je pro nás jediným možným řešením.
+              </p>
+              <div class="flex flex-col flex-wrap gap-4">
+                <a class="h4" href="tel:+420603874061">+420 603 874 061</a>
+                <a class="h4" href="mailto:info@tklumi.cz">info@tklumi.cz</a>
+              </div>
+            </div>
+            <div class="form-wrapper">
+              <!-- <form
+                name="contact-form"
+                method="post"
+                action="https://gmail.us21.list-manage.com/subscribe/post?u=6aca371083ebc0a9ee7f7a158&amp;id=2865b59bc6&amp;f_id=0094f3e6f0">
+                
+                <div class="form-inputs-row flex gap-4 w-full">
+                  <input type="text" name="NAME" placeholder="Jméno a příjmení" />
+                  <input type="email" name="EMAIL" placeholder="E-mail" />
+                  <input type="text" name="PHONE" placeholder="Telefonní číslo"" />
+                </div>
+                <textarea class="textarea" name="MSG" id="" placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
+                <div class="flex flex-row fa-center fj-end w-full flex-wrap gap-4">
+                  <p class="fs-tiny">Odesláním souhlasím se <a href="">zpracováním osobních údajů</a></p>
+                  <button class="button"><img src="./images/icons/blesk_zluty.svg" alt="" />Odeslat zprávu</button>
+                </div>
+              </form> -->
+              <form
+                action="https://gmail.us21.list-manage.com/subscribe/post?u=6aca371083ebc0a9ee7f7a158&amp;id=2865b59bc6&amp;f_id=0094f3e6f0"
+                method="post"
+                id="mc-embedded-subscribe-form"
+                name="mc-embedded-subscribe-form"
+                target="_blank">
+                <div class="form-inputs-row flex gap-4 w-full">
+                  <input type="text" name="NAME" id="mce-NAME" value="" placeholder="Jméno a příjmení" />
+                  <input
+                    type="email"
+                    name="EMAIL"
+                    class="required email"
+                    id="mce-EMAIL"
+                    required=""
+                    value=""
+                    placeholder="E-mail" />
+                  <input
+                    type="text"
+                    name="PHONE"
+                    class="REQ_CSS"
+                    id="mce-PHONE"
+                    value=""
+                    placeholder="Telefonní číslo" />
+                </div>
+                <textarea
+                  class="textarea"
+                  name="MSG"
+                  id="mce-MSG"
+                  value=""
+                  placeholder="Váš dotaz, nebojte se zeptat..."></textarea>
+                <div class="flex flex-row fa-center fj-end w-full flex-wrap gap-4">
+                  <p class="fs-tiny">Odesláním souhlasím se <a href="">zpracováním osobních údajů</a></p>
+                  <button class="button" type="submit" name="subscribe" id="mc-embedded-subscribe" value="Subscribe">
+                    <img src="./images/icons/blesk_zluty.svg" alt="" />Odeslat zprávu
+                  </button>
+                </div>
+                <!-- <div id="mce-responses" class="clear foot">
+                  <div class="response" id="mce-error-response" style="display: none">
+                  </div>
+                  <div class="response" id="mce-success-response" style="display: none"></div>
+                </div> -->
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                  /* real people should not fill this in and expect good things - do not remove this or risk form bot
+                  signups */
+                  <input type="text" name="b_6aca371083ebc0a9ee7f7a158_2865b59bc6" tabindex="-1" value="" />
+                </div>
+              </form>
+            </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script type="text/javascript">
+              (function ($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[1] = 'NAME';
+                ftypes[1] = 'text';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+                fnames[2] = 'MSG';
+                ftypes[2] = 'text';
+              })(jQuery);
+              var $mcj = jQuery.noConflict(true);
+            </script>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./components/footer.html') @@include('./components/scripts.html')
+  </body>
+</html>

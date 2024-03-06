@@ -82,7 +82,7 @@ select {
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
     scroll-behavior: smooth;
-    scroll-padding-top: 2.5rem;
+    scroll-padding-top: 7.5rem;
   }
 }
 

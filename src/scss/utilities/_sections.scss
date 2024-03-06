@@ -17,4 +17,8 @@ section {
   &.padding-bottom {
     padding-bottom: $padding-section;
   }
+
+  &.header-section {
+    padding-top: clamp(10rem, 6.129rem + 12.9032vw, 15rem);
+  }
 }

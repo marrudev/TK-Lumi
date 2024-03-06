@@ -91,7 +91,7 @@ select {
 @media (prefers-reduced-motion: no-preference) {
   :has(:target) {
     scroll-behavior: smooth;
-    scroll-padding-top: 2.5rem;
+    scroll-padding-top: 7.5rem;
   }
 }
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -2096,6 +2096,10 @@ section.padding-top {
 .section.padding-bottom,
 section.padding-bottom {
   padding-bottom: clamp(4rem, 2.3571rem + 5.7143vw, 7.5rem);
+}
+.section.header-section,
+section.header-section {
+  padding-top: clamp(10rem, 6.129rem + 12.9032vw, 15rem);
 }
 
 .shadow-none {
@@ -5859,6 +5863,12 @@ section.padding-bottom {
 }
 .h2-wrapper img {
   width: 1rem;
+}
+
+ul {
+  margin: 0;
+  list-style-position: inside;
+  padding-left: 0;
 }
 
 .hero-content {
